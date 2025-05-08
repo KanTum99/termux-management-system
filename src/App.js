@@ -1,4 +1,4 @@
-echo 'import React from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import Login from "./components/Login";
@@ -6,12 +6,16 @@ import Dashboard from "./components/Dashboard";
 
 const theme = createTheme({
   palette: {
-    primary: { main: "#1976d2" },
-    secondary: { main: "#dc004e" }
+    primary: {
+      main: '#1976d2',
+    },
+    secondary: {
+      main: '#dc004e',
+    },
   },
   typography: {
-    fontFamily: \'"Prompt", "Roboto", "Helvetica", "Arial", sans-serif\'
-  }
+    fontFamily: '"Prompt", "Roboto", "Helvetica", "Arial", sans-serif',
+  },
 });
 
 function App() {
@@ -28,4 +32,4 @@ function App() {
   );
 }
 
-export default App;' > src/App.js
+export default App;

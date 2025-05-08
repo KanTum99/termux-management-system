@@ -1,7 +1,20 @@
-echo 'import React from "react";
-import { Box, Typography, Grid, Card, CardContent, List, ListItem, ListItemText, AppBar, Toolbar, IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import React from "react";
+import { 
+  Box, 
+  Typography, 
+  Grid, 
+  Card, 
+  CardContent, 
+  List, 
+  ListItem, 
+  ListItemText,
+  AppBar,
+  Toolbar,
+  IconButton,
+  Avatar
+} from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
@@ -31,7 +44,13 @@ const Dashboard = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -42,10 +61,12 @@ const Dashboard = () => {
           </IconButton>
         </Toolbar>
       </AppBar>
+      
       <Box sx={{ p: 3 }}>
         <Typography variant="h5" gutterBottom sx={{ mb: 3 }}>
           Dashboard
         </Typography>
+        
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
             <Card>
@@ -63,6 +84,7 @@ const Dashboard = () => {
               </CardContent>
             </Card>
           </Grid>
+          
           <Grid item xs={12} md={6}>
             <Card>
               <CardContent>
@@ -79,6 +101,7 @@ const Dashboard = () => {
               </CardContent>
             </Card>
           </Grid>
+          
           <Grid item xs={12}>
             <Card>
               <CardContent>
@@ -101,4 +124,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;' > src/components/Dashboard.js
+export default Dashboard;
